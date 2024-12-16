@@ -35,7 +35,7 @@ project/
 │   │   └── pinecone_manager.py
 │   └── utils/
 │       ├── __init__.py
-│       └── logging_config.py
+│       └── logger.py
 
 ```
  
@@ -124,10 +124,10 @@ The system returns responses in the following format:
         {
             "content": "The Earth orbits the Sun at an average distance of 93 million miles.",
             "source": "NASA",
+            "chunk_index":"1",
             "confidence": 0.95
         }
     ],
-    "confidence_score": 0.95,
     "timestamp": "2024-11-19T10:30:00Z"
 }
 ```
